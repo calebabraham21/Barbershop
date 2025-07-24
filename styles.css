@@ -145,24 +145,27 @@ footer {
   color: #000;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
-  .nav-links {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .info-grid,
-  .info-grid.reverse {
-    grid-template-columns: 1fr;
-    direction: ltr;
-  }
-
-  .info-grid.reverse .info-text {
-    margin-top: 20px;
+  header {
+    padding: 16px;
   }
 
   .logo {
-    height: 150px;
+    height: 120px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .navbar-pinned {
+    width: 100%;
+  }
+
+  .nav-links a {
+    font-size: 1.2rem;
   }
 }
+
