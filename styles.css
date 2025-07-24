@@ -83,13 +83,15 @@ header {
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
-.info-grid.reverse {
+.info-section.reverse .info-grid {
   direction: rtl;
 }
 
-.info-grid.reverse .info-text {
+.info-section.reverse .info-text,
+.info-section.reverse .info-image {
   direction: ltr;
 }
+
 
 .info-text h2 {
   font-size: 25px;
@@ -218,21 +220,4 @@ footer {
 
 .back-button:hover {
   background-color: #2d472d;
-}
-@media (max-width: 600px) {
-  .services-container {
-    margin: 40px 16px;
-    padding: 30px 16px;
-  }
-
-  .services-title {
-    font-size: 26px;
-  }
-
-  .services-list li {
-    font-size: 16px;
-    flex-direction: column;
-    gap: 4px;
-    align-items: flex-start;
-  }
 }
