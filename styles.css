@@ -46,7 +46,7 @@ header {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 70px;
+  gap: 30px;
   justify-content: center;
   padding: 0;
   margin: 0;
@@ -169,3 +169,70 @@ footer {
   }
 }
 
+.services-container {
+  max-width: 600px;
+  margin: 80px auto;
+  padding: 40px 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+.services-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: #1a251a;
+}
+
+.services-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.services-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 0;
+  border-bottom: 1px solid #ccc;
+  font-size: 18px;
+  color: #333;
+}
+
+.back-button-wrapper {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.back-button {
+  background-color: #446644;
+  color: #fff;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.back-button:hover {
+  background-color: #2d472d;
+}
+@media (max-width: 600px) {
+  .services-container {
+    margin: 40px 16px;
+    padding: 30px 16px;
+  }
+
+  .services-title {
+    font-size: 26px;
+  }
+
+  .services-list li {
+    font-size: 16px;
+    flex-direction: column;
+    gap: 4px;
+    align-items: flex-start;
+  }
+}
